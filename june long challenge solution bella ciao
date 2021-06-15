@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t-->0){
+long long D,d,p,q;
+cin>>D>>d>>p>>q;
+ long long x=D/d;
+ if(D%d==0){
+     long long y=d*(x*(2*p+(x-1)*q))/2;
+     cout<<y<<endl;
+     
+ }
+ else{
+      long long y=d*(x*(2*p+(x-1)*q))/2+ (D%d)*(p+x*q);
+     cout<<y<<endl;
+ }
+}
+}
