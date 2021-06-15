@@ -1,0 +1,32 @@
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+		    long r=1000000007;
+		    long n=sc.nextLong();
+		    long m=sc.nextLong();
+		    long x=2;
+		   long temp=1;
+		    while(n>0){
+		        if(n%2==1)
+		        temp=(x*temp)%r;
+		        x=(x*x)%r;
+		        n=n/2;
+		   
+		    }
+		     long ans=temp-1;
+		   long hemp=1;
+		    while(m>0){
+		        if(m%2==1)
+		        hemp=(ans*hemp)%r;
+		        ans=(ans*ans)%r;
+		        m=m/2;
+		    }
+		    System.out.println(hemp);
+		}
+	}
+}
