@@ -1,0 +1,18 @@
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+		    int xa=sc.nextInt();
+		    int xb=sc.nextInt();
+		    int Xa=sc.nextInt();
+		    int Xb=sc.nextInt();
+		    int p=Xa/xa;
+		    int q=Xb/xb;
+		    System.out.println(p+q);
+		}
+	}
+}
